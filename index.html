@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Javascript</title>
+</head>
+<body>
+    <div class="validate">
+        <div class="container">
+            <h2>Reservation Form With Validation</h2>
+    <form action="#">
+        <div class="info">
+        <label for="name">Name *</label>
+        <input type="text" name="userName" id="name" placeholder="Name">
+        </div>
+
+        <div class="info">
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="info">
+                <label for="selectRoom">Room Type </label>
+                <select name="NumberOfrooms" id="selectRoom" >
+                    <option value="0" selected disabled>select</option>
+                    <option value="1">Person</option>
+                    <option value="2">Double</option>
+                    <option value="3">Triple</option>
+                    <option value="4">Quad</option>
+                </select>
+                </div>
+
+                <div class="info">
+                    <label for="ArrivalDate">Arrival Date *</label>
+                    <input type="text" name="ArrivalDate" id="ArrivalDate">
+                    </div>
+
+                    <div class="info">
+                        <label for="DepartureDate">Departure Date *</label>
+                        <input type="text" name="DepartureDate" id="DepartureDate">
+                        </div>
+                    <div class="info2">
+                        <label for="NumberOfGuests">Number of Guests*</label>
+                        <input type="number" name="NumberOfGuests" id="NumberOfGuests" max="2">
+                    </div>
+
+                    <div class="pick">
+                        <label>Free Pickup</label>
+                        <div class="Pickup">
+                        <input type="radio" name="Pickup" value="yes" id="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="Pickup" value="no" id="no" checked>
+                        <label for="no">No</label>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <label for="FlightNumber">Flight Number</label>
+                        <input type="text" name="FlightNumber" id="FlightNumber">
+                    </div>
+                    <div class="info3">
+                        <label for="SpecialRequests">Special Requests</label>
+                        <input type="text" name="SpecialRequests" id="SpecialRequests">
+                    </div>
+                    <div class="submit">
+                    <input type="submit">
+                    </div>
+    </form>
+    </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

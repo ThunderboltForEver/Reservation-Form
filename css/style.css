@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+  }
+  /* Small */
+@media ( min-width: 768px ) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media ( min-width: 992px ) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media ( min-width: 1200px ) {
+    .container {
+      width: 800px;
+    }
+  }
+  .validate {
+    padding: 30px 4px;
+    background-color: rgb(252, 249, 249);
+  }
+  .validate .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .validate .container h2 {
+    font-size: 1rem;
+    text-align: center;
+    padding: 20px 0 40px;
+  }
+  .validate form .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .validate form label {
+    min-width: fit-content;
+    width: 200px;
+    margin-right: 30px;
+  }
+  @media ( max-width: 767px ) {
+    .validate form .info label , .validate form .pick label{
+      min-width: 95px;
+      font-size: 12px;
+    }
+  }
+  
+  .validate form .info input:not([type = "radio"]) ,
+   .validate form .info select , .validate form .info2 input[type="number"] {
+    flex: 1;
+    min-width: 200px;
+    cursor: pointer;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #c7c6c6;
+    border-radius: 4px;
+    background-color: #ececec;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.validate form .info2 {
+  display: flex;
+  align-items: center;
+}
+.validate form .info2 input[type="number"] {
+  max-width: 120px; 
+}
+input[type = "radio"] {
+  appearance: none;
+}
+.pick {
+  display: flex;
+  padding: 14px 0;
+}
+.validate form .pick input[type = "radio"] + label {
+  position: relative;
+  padding-left: 20px;
+}
+.validate form .pick input[type = "radio"] + label::before , 
+.validate form .pick input[type = "radio"] + label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 2px solid blueviolet;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.validate form .pick input[type = "radio"]:checked + label::after {
+  width: 8px;
+  height: 8px;
+  top: 4px;
+  left: 4px;
+  background-color: rgb(21, 182, 21);
+  border: 0;
+}
+@media ( max-width: 767px ) {
+  .validate form .pick input[type = "radio"]:checked + label::after {
+    top: 1px;
+  }
+}
+.validate form .pick input[type = "radio"] , .validate form .pick input[type = "radio"] + label{
+  cursor: pointer;
+}
+@media ( max-width: 767px ) {
+  .validate form .Pickup {
+    min-width: 200px;
+  }
+}
+.validate form .info input:focus {
+  outline: none;
+}
+.validate form .info3 {
+  display: flex;
+}
+.validate form .info3 input {
+  height: 100px;
+  flex: 1;
+  background-color: #ececec;
+  border: 1px solid #c7c6c6;
+  line-height: 0;
+}
+.validate form .info3 input:focus {
+  outline: none;
+}
+div.submit {
+  display: flex;
+  justify-content: flex-end;
+}
+input[type = "submit"] {
+  padding: 6px 24px;
+  border: 0;
+  background-color: blueviolet;
+  color: white;
+  margin-top: 20px;
+}
