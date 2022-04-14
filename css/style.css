@@ -52,9 +52,13 @@
     margin-right: 30px;
   }
   @media ( max-width: 767px ) {
-    .validate form .info label , .validate form .pick label{
+    .validate form .info label ,
+     .validate form .pick label ,
+     .validate form .info2 label ,
+     .validate form .info3 label{
       min-width: 95px;
       font-size: 12px;
+      margin: 0;
     }
   }
   
@@ -136,6 +140,7 @@ input[type = "radio"] {
 .validate form .info3 input {
   height: 100px;
   flex: 1;
+  min-width: 200px;
   background-color: #ececec;
   border: 1px solid #c7c6c6;
   line-height: 0;
