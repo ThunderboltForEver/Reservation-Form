@@ -120,7 +120,7 @@ input[type = "radio"] {
 }
 @media ( max-width: 767px ) {
   .validate form .pick input[type = "radio"]:checked + label::after {
-    top: 1px;
+    top: 0px;
   }
 }
 .validate form .pick input[type = "radio"] , .validate form .pick input[type = "radio"] + label{
